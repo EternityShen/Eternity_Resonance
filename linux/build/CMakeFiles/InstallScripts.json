@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eternity/Work/Flutter/resonance/linux/build/cmake_install.cmake",
+		"/home/eternity/Work/Flutter/resonance/linux/build/flutter/cmake_install.cmake",
+		"/home/eternity/Work/Flutter/resonance/linux/build/runner/cmake_install.cmake",
+		"/home/eternity/Work/Flutter/resonance/linux/build/plugins/rust_lib_resonance/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

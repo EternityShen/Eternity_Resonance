@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resonance/src/rust/api/player.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Card(
+                  color: Colors.pink[200],
                   margin: const EdgeInsets.only(top: 40),
                   child: SizedBox(
                     height: 400,
@@ -94,7 +96,11 @@ class _HomePageState extends State<HomePage> {
                                 icon: const Icon(Icons.skip_previous),
                               ),
                               IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  playFile(
+                                    path: "/home/eternity/Music/K歌之王.mp3",
+                                  );
+                                },
                                 icon: const Icon(Icons.play_arrow, size: 32), //
                               ),
                               IconButton(
@@ -116,4 +122,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
